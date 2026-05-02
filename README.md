@@ -16,7 +16,7 @@ The app supports English and Arabic news results, with a simple search experienc
 
 | Search Result - English | Search Result - Arabic |
 |--------------------------|-------------------------|
-| <img src="screenshots/SearchResultScreenEN.png" width="250"> | <img src="screenshots/SearchResultScreenAR.png" width="250"> |
+| <img src="screenshots/SearchResultScreenEN.png" width="250"> | <img src="screenshots/SearchResultScreejnAR.png" width="250"> |
 
 ---
 
