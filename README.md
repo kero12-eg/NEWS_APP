@@ -16,7 +16,7 @@ The app supports English and Arabic news results, with a simple search experienc
 
 | Search Result - English | Search Result - Arabic |
 |--------------------------|-------------------------|
-| <img src="screenshots/SearchResultScreenEN.png" width="250"> | <img src="screenshots/SearchResultScreenAr.png" width="250"> |
+| <img src="screenshots/SearchResultScreenEN.png" width="250"> | <img src="screenshots/SearchResultScreenAR.png" width="250"> |
 
 ---
 
@@ -140,7 +140,7 @@ Make sure the screenshots folder contains these images with the same names:
     screenshots/HomeScreen.png
     screenshots/SearchScreen.png
     screenshots/SearchResultScreenEN.png
-    screenshots/SearchResultScreenAr.png
+    screenshots/SearchResultScreenAR.png
 
 ---
 
