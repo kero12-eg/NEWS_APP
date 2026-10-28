@@ -16,7 +16,7 @@ The app supports English and Arabic news results, with a simple search experienc
 
 | Search Result - English | Search Result - Arabic |
 |--------------------------|-------------------------|
-| <img src="protiflo/screenshots/SearchResultScreenEN.png" width="250"> | <img src="protiflo/screenshots/SearchResultScreenAr.png" width="250"> |
+| <img src="protiflo/screenshots/SearchResultScreenEN.png" width="250"> | <img src="protiflo\screenshots\SearchResultScreejnAR.png" width="250"> |
 
 ---
 
