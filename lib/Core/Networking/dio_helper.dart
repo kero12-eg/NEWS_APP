@@ -40,4 +40,28 @@ class DioHelper {
       rethrow;
     }
   }
+  static Future<Response<dynamic>> deleteRequest({
+    required String Endpoint,
+    required Map<String, dynamic> data,
+  }) async {
+    try {
+      var response = await dio!.delete(Endpoint, data: data);
+      return response;
+    } catch (e) {
+      log(e.toString());
+      rethrow;
+    }
+  }
+  static Future<Response<dynamic>> putRequest({
+    required String Endpoint,
+    required Map<String, dynamic> data,
+  }) async {
+    try {
+      var response = await dio!.put(Endpoint, data: data);
+      return response;
+    } catch (e) {
+      log(e.toString());
+      rethrow;
+    }
+  }
 }

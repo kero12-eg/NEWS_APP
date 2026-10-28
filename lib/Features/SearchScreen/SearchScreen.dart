@@ -14,15 +14,15 @@ class Searchscreen extends StatefulWidget {
 }
 
 class _SearchscreenState extends State<Searchscreen> {
- TextEditingController controller = TextEditingController();
+  TextEditingController controller = TextEditingController();
 
-final GlobalKey<FormState> formkey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formkey = GlobalKey<FormState>();
 
-@override
-void initState() {
-  super.initState();
-  controller = TextEditingController();
-}
+  @override
+  void initState() {
+    super.initState();
+    controller = TextEditingController();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,19 +34,31 @@ void initState() {
           centerTitle: false,
           title: Padding(
             padding: EdgeInsets.symmetric(horizontal: 32.w),
-            child: Customtextfield(controller: controller,validator: (value) {
-               if(value!.isEmpty){return LocaleKeys.Valid.tr();}
-               return null;
-            },
-            onpressed1: () {
-              if (formkey.currentState!.validate()) {
-                context.push(AppRoutes.searchresultsscreen,extra: controller.text);
-              }
-            },
-            onpressed2: () {
-              controller.clear();
-            },
-            
+            child: Customtextfield(
+              controller: controller,
+              onpressed1: () {
+                if (formkey.currentState!.validate()) {
+                  //snackbar
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: controller.text.isEmpty
+                          ? Text("Please enter a search term")
+                          : Text(
+                              LocaleKeys.search.tr().tr() +
+                                  ' "${controller.text}"',
+                            ),
+                      duration: Duration(seconds: 1),
+                    ),
+                  );
+                  context.push(
+                    AppRoutes.searchresultsscreen,
+                    extra: controller.text,
+                  );
+                }
+              },
+              onpressed2: () {
+                controller.clear();
+              },
             ),
           ),
           actions: [
@@ -58,7 +70,6 @@ void initState() {
                 LocaleKeys.cancel.tr(),
                 style: TextStyle(color: Colors.black),
               ),
-              
             ),
           ],
         ),

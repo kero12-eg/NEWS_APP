@@ -99,6 +99,7 @@ class _HomescreenState extends State<Homescreen> {
                       child: Row(
                         mainAxisAlignment: .spaceEvenly,
                         children: [
+
                           NavBar(
                             title: LocaleKeys.travel.tr(),
                             onPressed: () {

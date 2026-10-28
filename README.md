@@ -12,11 +12,11 @@ The app supports English and Arabic news results, with a simple search experienc
 
 | Home Screen | Search Screen |
 |------------|---------------|
-| <img src="screenshots/HomeScreen.png" width="250"> | <img src="screenshots/SearchScreen.png" width="250"> |
+| <img src="protiflo/screenshots/HomeScreen.png" width="250"> | <img src="protiflo/screenshots/SearchScreen.png" width="250"> |
 
 | Search Result - English | Search Result - Arabic |
 |--------------------------|-------------------------|
-| <img src="screenshots/SearchResultScreenEN.png" width="250"> | <img src="screenshots/SearchResultScreejnAR.png" width="250"> |
+| <img src="protiflo/screenshots/SearchResultScreenEN.png" width="250"> | <img src="protiflo/screenshots/SearchResultScreenAr.png" width="250"> |
 
 ---
 
@@ -140,7 +140,7 @@ Make sure the screenshots folder contains these images with the same names:
     screenshots/HomeScreen.png
     screenshots/SearchScreen.png
     screenshots/SearchResultScreenEN.png
-    screenshots/SearchResultScreenAR.png
+    screenshots/SearchResultScreenAr.png
 
 ---
 

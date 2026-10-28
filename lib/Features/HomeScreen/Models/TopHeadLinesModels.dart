@@ -1,10 +1,12 @@
 import 'dart:convert';
 
-ArticleModel ArticleModelFromJson(String str) =>
-    ArticleModel.fromJson(json.decode(str));
+ArticleModel ArticleModelFromJson(String str) {
+  return ArticleModel.fromJson(json.decode(str));
+}
 
-String ArticleModelToJson(ArticleModel data) =>
-    json.encode(data.toJson());
+String ArticleModelToJson(ArticleModel data) {
+  return json.encode(data.toJson());
+}
 
 class ArticleModel {
   String? status;
@@ -17,8 +19,8 @@ class ArticleModel {
     this.articles,
   });
 
-  factory ArticleModel.fromJson(Map<String, dynamic> json) =>
-      ArticleModel(
+  factory ArticleModel.fromJson(Map<String, dynamic> json) {
+    return ArticleModel(
         status: json["status"]?.toString(),
         totalResults: json["totalResults"],
         articles: json["articles"] == null
@@ -27,6 +29,7 @@ class ArticleModel {
                 json["articles"].map((x) => Article.fromJson(x)),
               ),
       );
+  }
 
   Map<String, dynamic> toJson() => {
         "status": status,

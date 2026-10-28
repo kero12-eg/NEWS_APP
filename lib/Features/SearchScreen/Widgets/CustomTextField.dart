@@ -5,13 +5,11 @@ class Customtextfield extends StatelessWidget {
   const Customtextfield({
     super.key,
     this.controller,
-    this.validator,
     this.onpressed1,
     this.onpressed2,
   });
 
   final TextEditingController? controller;
-  final String? Function(String?)? validator;
   final VoidCallback? onpressed1;
   final VoidCallback? onpressed2;
 
@@ -22,7 +20,7 @@ class Customtextfield extends StatelessWidget {
       height: 56.h,
       child: TextFormField(
         controller: controller,
-        validator: validator,
+        textInputAction: .search,
         keyboardType: TextInputType.webSearch,
         autofocus: true,
       
